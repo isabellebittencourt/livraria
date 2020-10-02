@@ -3,9 +3,11 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const routes = require ('./routes.js')
+const cors = require('cors');
 
 const app = express();
 
+app.use(cors());
 //Configurar a conversão das informações que chegam em uma requisição
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

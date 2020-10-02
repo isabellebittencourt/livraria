@@ -26,8 +26,11 @@ var book = new mongoose.Schema ({
         type: Number,
         required: [true, "Obrigatório"]
     },
+    quantidade:{
+        type:Number,
+        required: [true, "Obrigatório"]
+    },
     categoria: [categorieSchema]
 })
 
-module.exports = book;
-mongoose.model('livro', book);
+module.exports = mongoose.model('livro', book);

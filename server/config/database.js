@@ -1,7 +1,5 @@
 const mongoose = require ('mongoose');
 
-
-
 const db = mongoose.connect('mongodb+srv://isabellebitten:andrade123@cluster0.te5ze.gcp.mongodb.net/livraria?retryWrites=true&w=majority', {useNewUrlParser:true, useUnifiedTopology: true,});
 
 mongoose.connection.on("connected", () => {

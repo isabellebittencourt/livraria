@@ -1,0 +1,14 @@
+###
+GET http://localhost:1234/
+
+
+###
+POST http://localhost:1234/
+content-type: application/json
+{
+    "name": "Isabelle",
+    "cpf":"08185209901",
+    "email":"isabellebittencourt174@gmail.com",
+    "dataNascimento":"2020-08-20"
+}
+
